@@ -77,10 +77,10 @@ public class MagazineController {
         return "redirect:/magazine/magazineList";
     }
 
-    //매거진 검색
-    @GetMapping("/selectMagazine")
-    public String selectMagazine() {
-        return "/magazine/selectMagazine";
-    }
+//    //매거진 검색
+//    @GetMapping("/selectMagazine")
+//    public String selectMagazine() {
+//        return "/magazine/selectMagazine";
+//    }
 
 }

@@ -50,7 +50,8 @@
                 <input type="file" class="form-control" name="uploadfile" id="upload" placeholder="내용을 입력해주세요">
             </div>
 
-            <button type="submit" class="btn btn-sm btn-primary" id="save" th:value="${board == null ? '등록' : '수정'}">등록</button>
+            <button type="submit" class="btn btn-sm btn-primary" id="save" onclick="return confirm('글을 등록하시겠습니까?')"
+                    th:value="${board == null ? '등록' : '수정'}">등록</button>
 <!--            <a th:href="@{|/board/modify/${board.id}|}" method="post">-->
 <!--                <button type="button" class="btn btn-sm btn-primary">수정</button>-->
 <!--            </a>-->

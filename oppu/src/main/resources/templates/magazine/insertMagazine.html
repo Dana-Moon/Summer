@@ -41,7 +41,8 @@
                 <label for="content">내용</label>
                 <textarea class="form-control" rows="5" name="content" id="content" placeholder="내용을 입력해주세요"></textarea>
             </div>
-            <button type="submit" class="btn btn-sm btn-primary" id="save">등록</button>
+            <button type="submit" class="btn btn-sm btn-primary" onclick="return confirm('글을 등록하시겠습니까?')"
+                    id="save">등록</button>
             <a href="/magazine/insertMagazine">
                 <button href="/magazine/magazineList" type="button" class="btn btn-sm btn-primary" id="list">목록</button>
             </a>

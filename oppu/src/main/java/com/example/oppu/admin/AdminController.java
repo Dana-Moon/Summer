@@ -46,18 +46,18 @@ public class AdminController {
     }
 
     //관리자 목록
-    @GetMapping("/getAdminList")
-    public String getAdminList(Model model) {
-     model.addAttribute("adminList", adminService.getAdminList());
-     return "/admin/getAdminList";
-    }
+//    @GetMapping("/getAdminList")
+//    public String getAdminList(Model model) {
+//     model.addAttribute("adminList", adminService.getAdminList());
+//     return "/admin/getAdminList";
+//    }
 
     //관리자 상세보기
-    @GetMapping("/getAdmin")
-    public String getMagazine(Admin admin, Model model) {
-        model.addAttribute("admin", adminService.getAdmin(admin));
-        return "/admin/getAdmin";
-    }
+//    @GetMapping("/getAdmin")
+//    public String getMagazine(Admin admin, Model model) {
+//        model.addAttribute("admin", adminService.getAdmin(admin));
+//        return "/admin/getAdmin";
+//    }
 
     //관리자 수정
     @PostMapping("/updateAdmin")

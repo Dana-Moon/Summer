@@ -63,7 +63,7 @@
             </tr>
             <tr>
                 <th>조회수</th>
-                <td th:text="${magazine.views}">0</td>
+                <td>0</td>
             </tr>
             <tr>
                 <td colspan="2" th:text="${magazine.content}">게시글 내용이 출력될 예정</td>
@@ -74,7 +74,8 @@
         <button onclick="location.href='/magazine/magazineList'" type="button" class="btn btn-light">목록</button>
         <button sec:authorize="hasRole('ROLE_ADMIN')" href="%" type="button" class="btn btn-light">수정</button>
         <button sec:authorize="hasRole('ROLE_ADMIN')"
-                th:onclick="|location.href='@{/magazine/deleteMagazine(id=${magazine.id})}'|" type="button" class="btn btn-light">삭제</button>
+                th:onclick="|location.href='@{/magazine/deleteMagazine(id=${magazine.id})}'|"
+                type="button" class="btn btn-light">삭제</button>
         <button sec:authorize="hasRole('ROLE_ADMIN')" href="#" type="button" class="btn btn-light">글쓰기</button>
     </div>
 </div>
